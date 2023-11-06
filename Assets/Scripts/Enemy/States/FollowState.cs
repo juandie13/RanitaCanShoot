@@ -10,7 +10,7 @@ public class FollowState : State
         Transition transitionFollowToIdle = new Transition(
             isValid: () => {
                 float distance = Vector3.Distance(
-                    controller.Player.position,
+                    controller.target.transform.position,
                     controller.transform.position
                 );
                 if (distance >= controller.DistanceToFollow)
@@ -31,7 +31,7 @@ public class FollowState : State
         Transition transitionFollowToAttack = new Transition(
             isValid: () =>{
                 float distance = Vector3.Distance(
-                    controller.Player.position,
+                    controller.target.transform.position,
                     controller.transform.position
                 );
                 if (distance < controller.DistanceToAttack)
@@ -65,7 +65,7 @@ public class FollowState : State
     public override void OnUpdate()
     {
         // 1. Rotar al enemigo para que mire al Player
-        var dir = controller.Player.position -  controller.transform.position;
+        var dir = controller.target.transform.position -  controller.transform.position;
         var desiredRotation = Quaternion.LookRotation(dir);
         controller.transform.rotation = 
             Quaternion.Lerp(
@@ -75,7 +75,7 @@ public class FollowState : State
             );
         // 2. Mover al enemigo
         
-        controller.agent.destination = controller.Player.position;
+        controller.agent.destination = controller.target.transform.position;
         /*var normalizedDir = dir.normalized;
         controller.rb.velocity = new Vector3(
             normalizedDir.x * controller.Speed,

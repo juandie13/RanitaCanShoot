@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  DistanceToFollow: 10
+  DistanceToFollow: 50
   DistanceToAttack: 3
   Speed: 1
   FirePoint: {fileID: 0}

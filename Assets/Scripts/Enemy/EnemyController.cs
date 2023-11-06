@@ -13,7 +13,8 @@ public class EnemyController : MonoBehaviour
     #endregion
 
     #region Parameters
-    public  Transform Player;
+    //public Transform Player;
+    public GameObject target;
     public float DistanceToFollow = 4f;
     public float DistanceToAttack = 3f;
     public float Speed = 1f;
@@ -46,6 +47,7 @@ public class EnemyController : MonoBehaviour
     private void Start() 
     {
         currentState.OnStart();
+        target = GameObject.Find("Player");
     }
 
     private void Update() 

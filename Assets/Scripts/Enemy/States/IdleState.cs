@@ -10,7 +10,7 @@ public class IdleState : State
         Transition transitionIdleToFollow = new Transition(
             isValid: () => {
                 float distance = Vector3.Distance(
-                    controller.Player.position,
+                    controller.target.transform.position,
                     controller.transform.position
                 );
                 if (distance < controller.DistanceToFollow)
