@@ -15,4 +15,16 @@ public class PlayerInteractions : MonoBehaviour
     {
         
     }
+    public void DamagePalyer(int damage)
+    {
+        if (GameManager.Instance.armorLifeCurrent > 0)
+        {
+            GameManager.Instance.armorLifeCurrent -= damage;
+        }
+        else
+        {
+            GameManager.Instance.playerLifeCurrent -= damage;
+        }
+        
+    }
 }
