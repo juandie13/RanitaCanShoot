@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerFire : MonoBehaviour
 {
+    public SoundManager SM;
+    private bool reloadSound = true;
     private void Update()
     {
         Debug.DrawRay(
@@ -22,17 +24,27 @@ public class PlayerFire : MonoBehaviour
             if (Physics.Raycast(transform.position, transform.forward, out hit, 20f))
             {
                 // Choco con algo
-                Debug.Log(hit.collider.transform.name);
+               // Debug.Log(hit.collider.transform.name);
+                if (hit.collider.gameObject.CompareTag("HeadShoot"))
+                {
+                    Debug.Log("Bajar vida a enemigo");
+                    //hit.collider.transform.parent
+                }
                 Quaternion lookAt = Quaternion.LookRotation(hit.normal);
                 GameObject temp = Resources.Load<GameObject>("BulletCollision");
                 var obj = Instantiate(
                     temp,
                     hit.point,
                     lookAt);
+                SM.PlaySound(SoundManager.SoundType.shoot);
                 GameManager.Instance.gunAmmoCurrent--;
                 Destroy(obj, 2f);
 
             }
+        }
+        else if (GameManager.Instance.canShoot == false && GameManager.Instance.isReloading == false)
+        {
+            SM.PlaySound(SoundManager.SoundType.noAmmo);
         }
     }
 
@@ -40,6 +52,11 @@ public class PlayerFire : MonoBehaviour
     {
         if (GameManager.Instance.canReload)
         {
+            if (reloadSound == true)
+            {
+                reloadSound = false;
+                SM.PlaySound(SoundManager.SoundType.reload);
+            }
             StartCoroutine(ReloadWeapon());
         }
     }
@@ -48,10 +65,11 @@ public class PlayerFire : MonoBehaviour
     {
         GameManager.Instance.isReloading = true;
         GameManager.Instance.canShoot = false;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         GameManager.Instance.gunAmmoCurrent = GameManager.Instance.gunAmmoMax;
         GameManager.Instance.canShoot = true;
         GameManager.Instance.isReloading = false;
+        reloadSound = true;
     }
 
 }
