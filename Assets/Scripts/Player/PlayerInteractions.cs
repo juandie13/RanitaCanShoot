@@ -15,7 +15,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         
     }
-    public void DamagePalyer(int damage)
+    public void DamagePlayer(float damage)
     {
         if (GameManager.Instance.armorLifeCurrent > 0)
         {
@@ -25,6 +25,19 @@ public class PlayerInteractions : MonoBehaviour
         {
             GameManager.Instance.playerLifeCurrent -= damage;
         }
+    }
+
+    private void onCollisionEnter(Collision collision){
         
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        Debug.Log("CHOCANDO");
+        //Debug.Log(collision.transform.tag);
+        if (collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("EnemySmall") || collision.transform.CompareTag("EnemyBig"))
+        {
+           // Debug.Log("recibirDano");
+            DamagePlayer(0.1f);
+        }
     }
 }

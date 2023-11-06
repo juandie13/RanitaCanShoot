@@ -60,8 +60,8 @@ public class CanvasLogic : MonoBehaviour
     private void PlayerLife()
     {
         FaceLogic();
-        int lifeValue = GameManager.Instance.playerLifeCurrent;
-        int lifeMax = GameManager.Instance.playerLifeMax;
+        int lifeValue = ((int)GameManager.Instance.playerLifeCurrent);
+        int lifeMax = ((int)GameManager.Instance.playerLifeMax);
 
         if (lifeValue > lifeMax) { lifeValue = lifeMax; }
         else if (lifeValue < 0) { lifeValue = 0; }
@@ -96,8 +96,8 @@ public class CanvasLogic : MonoBehaviour
     private void ShieldLife()
     {
         ShieldLogic();
-        int shieldValue = GameManager.Instance.armorLifeCurrent;
-        int shieldMax = GameManager.Instance.armorLifeMax;
+        int shieldValue = ((int)GameManager.Instance.armorLifeCurrent);
+        int shieldMax = ((int)GameManager.Instance.armorLifeMax);
 
         if (shieldValue > shieldMax) { shieldValue = shieldMax; }
         else if (shieldValue < 0) { shieldValue = 0; }
