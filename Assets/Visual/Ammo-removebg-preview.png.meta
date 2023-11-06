@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 8aeeb8d5e10ad41f78e1190e0f8f878a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a200529e02247a2b7ae1b512fab3e9
+      internalID: -703967319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f922666e73d54cf0bdbed596d7fda5d
+      internalID: 189680439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549a3fc0c589742f7b0244bca04c64a5
+      internalID: -893820868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3168df814b5445aa6997f939a7b767
+      internalID: -1051237040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7707582963d5243889890be78edee9cc
+      internalID: 2061685733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc998484e4e143f4bc4efec72774d74
+      internalID: 2112073745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980bfc559b99242c18a09e52273ff146
+      internalID: 17545931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3e2ca0878194455bc7c102ca7e2478
+      internalID: -1427833298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ce78c54cb4e4c759a8aeb9d6533934
+      internalID: -1956679647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997e597d57add46628b692a3a84ab4a9
+      internalID: -170766656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 144.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39eedd5fe7dd84b24901a39a037666e0
+      internalID: -2099194915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3aab25f43e545b1a215146d0b28e30
+      internalID: 586645031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744c10b5ca31e4814adf1785c6d931ff
+      internalID: -1284698033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3629f48f63caa4cbe8be1fa601e269f2
+      internalID: 798576839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffd658f48f6c4d4aafa2f2ffc156472
+      internalID: 1258827540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f5478895e8a47359a5bf6147cf33e8
+      internalID: 803049621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b67a36bf8524d11bd2fd78cc88aee1
+      internalID: -728439136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3a4eb095bf34541a6e754324c7f4c1
+      internalID: -258260717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8957d3bf6f304489daabe5f40bacfba1
+      internalID: 1304690863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbc204f63942499ca16907e6e25d484
+      internalID: -868904047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2774d1c63d0f4fce84628a838c98b5a
+      internalID: -295383787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ammo-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0.5
+        width: 78.454544
+        height: 144.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a2ddb9d34ef4a33b93a2227fd7780e
+      internalID: 1674264715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6c611d0c8f2464e49926cb05bb4bb6d7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ammo-removebg-preview_0: -703967319
+      Ammo-removebg-preview_1: 189680439
+      Ammo-removebg-preview_10: -2099194915
+      Ammo-removebg-preview_11: 586645031
+      Ammo-removebg-preview_12: -1284698033
+      Ammo-removebg-preview_13: 798576839
+      Ammo-removebg-preview_14: 1258827540
+      Ammo-removebg-preview_15: 803049621
+      Ammo-removebg-preview_16: -728439136
+      Ammo-removebg-preview_17: -258260717
+      Ammo-removebg-preview_18: 1304690863
+      Ammo-removebg-preview_19: -868904047
+      Ammo-removebg-preview_2: -893820868
+      Ammo-removebg-preview_20: -295383787
+      Ammo-removebg-preview_21: 1674264715
+      Ammo-removebg-preview_3: -1051237040
+      Ammo-removebg-preview_4: 2061685733
+      Ammo-removebg-preview_5: 2112073745
+      Ammo-removebg-preview_6: 17545931
+      Ammo-removebg-preview_7: -1427833298
+      Ammo-removebg-preview_8: -1956679647
+      Ammo-removebg-preview_9: -170766656
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

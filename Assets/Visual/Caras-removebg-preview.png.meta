@@ -1,0 +1,1130 @@
+fileFormatVersion: 2
+guid: 7b19f25e16f474bbeba5da3fc864f74c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Caras-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f96e288222434f8f85539245f2fe481
+      internalID: -531775341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ce75fc8e87e46e0a56ffabf828d9d6
+      internalID: 1252896853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a676695f448e840afb2eb0505885364e
+      internalID: 1520492568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24dfc69406984a64991227f837c5448
+      internalID: -998964726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5b1cc515f7047799944a0f62744738
+      internalID: -1628495276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e6cfafda3d24fd9b12b5d1b3aa2c85
+      internalID: 1270555367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e894f235d4f22419c8562cdfa0a980bd
+      internalID: -545929699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dac369e7d0f44469ce00604dd92c3b
+      internalID: 199904390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 309
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0da7f0949cf4045bc4b346500d1281
+      internalID: 374040599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423a77be3311040278e5a5b44c3491de
+      internalID: 943738184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c114d18c7e4421aa110902d4a12187
+      internalID: -507076332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fadd41832fe46d18a5b842e64146e6
+      internalID: -110420023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca511f8bfe5a84338a04d8720dbf2d57
+      internalID: 2104042947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cd037ed7bb0405095adac071667c8a
+      internalID: 123799823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223b32ebe6ab44717adc1369a5db3a51
+      internalID: 408354013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4e2cad308864da4ba1d45fd4be5b09
+      internalID: -2043815836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88918376a2b5e403da3623e2300e7f04
+      internalID: 715310984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 238
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccb265d954da4f4c9ad7e869e1ddebd
+      internalID: 215774532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb00a80f2a4d47c1a090d64d007dee9
+      internalID: 768218021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250ffa3d48d9f49ae8d715a14b7b8951
+      internalID: -707863092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a8443a85f2c4c198b64bdc11b35f92
+      internalID: 1478597018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc000e0d375c434298d764baff44d1c
+      internalID: 1935237893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43326f8bd57e94fe7a9f2e724e6e4bbb
+      internalID: -1549173122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72e32fcce7754c22a7b151bcf48e4c4
+      internalID: 261437569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483aa172055ce4af8aa9ada624aa5432
+      internalID: 1386943566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f59ae5593314422bd8c457369153b9
+      internalID: -1310165753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 167
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63234422b05c04de9af93c560a4c86a6
+      internalID: -31855464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954d48e759a9a4aeb8b3a73337338633
+      internalID: -1142212372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4ea91dd5b484504970d55b8ec030da
+      internalID: 922203262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa81e7562f1b455aa447ea47de9d163
+      internalID: 2136003452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b35a4396ffb3460e9ea59249b7f6092
+      internalID: 1920872164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86fbb7d3de894a55bb0e27edd48609c
+      internalID: 1595904024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b22b19886b641cd9671462e98ce9e5
+      internalID: 1111116645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf04b2b228a984f4895c3becdc8e6edf
+      internalID: -1262286400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b5ca913bd2e48d7882e5d00bc094b5
+      internalID: 597549351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 96
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47bf0348dac149fbaf22f6af6eca50b
+      internalID: 339194166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1006c151c8bd24d9992dac72f23a7662
+      internalID: -826282197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983625d39e52242f78d83f924d701feb
+      internalID: 1213116475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d79faa2409bf49fe8334bc2522094b2
+      internalID: 1192809855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d67bdbc804054d76a20907147b300e3
+      internalID: 1314477546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0fdc4e148284bef9006b02d537456d
+      internalID: -1680594418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c053de650fd4afc9f708d469812ac8
+      internalID: 366785079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31fb3174dda0487e8f9662e1f4205d1
+      internalID: -1327290863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba819b84049f4438c87f1a67733bd160
+      internalID: 1080317268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caras-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 25
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ced95ce24a149c586e21ea125b8453
+      internalID: 1251238539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 30d1920d11ae648248097ff1762871af
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Caras-removebg-preview_0: -531775341
+      Caras-removebg-preview_1: 1252896853
+      Caras-removebg-preview_10: -507076332
+      Caras-removebg-preview_11: -110420023
+      Caras-removebg-preview_12: 2104042947
+      Caras-removebg-preview_13: 123799823
+      Caras-removebg-preview_14: 408354013
+      Caras-removebg-preview_15: -2043815836
+      Caras-removebg-preview_16: 715310984
+      Caras-removebg-preview_17: 215774532
+      Caras-removebg-preview_18: 768218021
+      Caras-removebg-preview_19: -707863092
+      Caras-removebg-preview_2: 1520492568
+      Caras-removebg-preview_20: 1478597018
+      Caras-removebg-preview_21: 1935237893
+      Caras-removebg-preview_22: -1549173122
+      Caras-removebg-preview_23: 261437569
+      Caras-removebg-preview_24: 1386943566
+      Caras-removebg-preview_25: -1310165753
+      Caras-removebg-preview_26: -31855464
+      Caras-removebg-preview_27: -1142212372
+      Caras-removebg-preview_28: 922203262
+      Caras-removebg-preview_29: 2136003452
+      Caras-removebg-preview_3: -998964726
+      Caras-removebg-preview_30: 1920872164
+      Caras-removebg-preview_31: 1595904024
+      Caras-removebg-preview_32: 1111116645
+      Caras-removebg-preview_33: -1262286400
+      Caras-removebg-preview_34: 597549351
+      Caras-removebg-preview_35: 339194166
+      Caras-removebg-preview_36: -826282197
+      Caras-removebg-preview_37: 1213116475
+      Caras-removebg-preview_38: 1192809855
+      Caras-removebg-preview_39: 1314477546
+      Caras-removebg-preview_4: -1628495276
+      Caras-removebg-preview_40: -1680594418
+      Caras-removebg-preview_41: 366785079
+      Caras-removebg-preview_42: -1327290863
+      Caras-removebg-preview_43: 1080317268
+      Caras-removebg-preview_44: 1251238539
+      Caras-removebg-preview_5: 1270555367
+      Caras-removebg-preview_6: -545929699
+      Caras-removebg-preview_7: 199904390
+      Caras-removebg-preview_8: 374040599
+      Caras-removebg-preview_9: 943738184
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
