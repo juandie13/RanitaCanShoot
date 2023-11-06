@@ -19,6 +19,7 @@ public class EnemyController : MonoBehaviour
     public float Speed = 1f;
     public Transform FirePoint;
     public float CoolDownTime = 1.0f;
+    public float enemyHealth = 100f;
     #endregion
 
     #region Readonly Properties
@@ -61,5 +62,16 @@ public class EnemyController : MonoBehaviour
             }
         }
         currentState.OnUpdate();    
+    }
+    public void DamageEnemy(float damage) {
+        enemyHealth -= damage;
+        Die();
+    }
+    public void Die()
+    {
+        if (enemyHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
