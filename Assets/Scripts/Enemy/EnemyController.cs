@@ -65,5 +65,13 @@ public class EnemyController : MonoBehaviour
     }
     public void DamageEnemy(float damage) {
         enemyHealth -= damage;
+        Die();
+    }
+    public void Die()
+    {
+        if (enemyHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -27,8 +27,11 @@ public class PlayerFire : MonoBehaviour
                // Debug.Log(hit.collider.transform.name);
                 if (hit.collider.gameObject.CompareTag("HeadShoot"))
                 {
-                    Debug.Log("Bajar vida a enemigo");
-                    //hit.collider.transform.parent
+                    hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(15f);
+                }
+                else if (hit.collider.gameObject.CompareTag("Enemy"))
+                {
+                    hit.collider.gameObject.GetComponent<BodyDamage>().DoDamage(5f);
                 }
                 Quaternion lookAt = Quaternion.LookRotation(hit.normal);
                 GameObject temp = Resources.Load<GameObject>("BulletCollision");
