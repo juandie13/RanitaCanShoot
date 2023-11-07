@@ -33,6 +33,9 @@ public class CanvasLogic : MonoBehaviour
     public Image ammoCurrentSprite;
     public TextMeshProUGUI ammoCurrentText;
 
+    [SerializeField] GameObject player;
+    [SerializeField] GameObject rocketLauncher;
+
 
     // Update is called once per frame
     void Update()
@@ -124,41 +127,64 @@ public class CanvasLogic : MonoBehaviour
 
     private void AmmoLeft()
     {
-        AmmoLogic();
-        int ammoValue = GameManager.Instance.gunAmmoCurrent;
-        int ammoMax = GameManager.Instance.gunAmmoMax;
+        if(player.GetComponent<PlayerMovement>().weaponSelect==0){
+            AmmoLogic();
+            int ammoValue = GameManager.Instance.gunAmmoCurrent;
+            int ammoMax = GameManager.Instance.gunAmmoMax;
 
-        if (ammoValue > ammoMax) { ammoValue = ammoMax; }
-        else if (ammoValue < 0) { ammoValue = 0; }
+            if (ammoValue > ammoMax) { ammoValue = ammoMax; }
+            else if (ammoValue < 0) { ammoValue = 0; }
 
-        ammoCurrentText.SetText(ammoValue.ToString() + " / " + ammoMax.ToString());
+            ammoCurrentText.SetText(ammoValue.ToString() + " / " + ammoMax.ToString());
+        }else{
+            AmmoLogic();
+            int ammoValue = rocketLauncher.GetComponent<GunfireController>().ammo;
+            int ammoMax = 1;
+
+            if (ammoValue > ammoMax) { ammoValue = ammoMax; }
+            else if (ammoValue < 0) { ammoValue = 0; }
+
+            ammoCurrentText.SetText(ammoValue.ToString() + " / " + ammoMax.ToString());
+        }
+        
     }
 
     private void AmmoLogic()
-    {
-        if (GameManager.Instance.gunAmmoCurrent == GameManager.Instance.gunAmmoMax)
+    {   if(player.GetComponent<PlayerMovement>().weaponSelect==0){
+            if (GameManager.Instance.gunAmmoCurrent == GameManager.Instance.gunAmmoMax)
+            {
+                ammoCurrentSprite.sprite = ammoSprites[0];
+            }
+            else if (GameManager.Instance.gunAmmoCurrent >= GameManager.Instance.gunAmmoMax / 4 * 3)
+            {
+                ammoCurrentSprite.sprite = ammoSprites[1];
+            }
+            else if (GameManager.Instance.gunAmmoCurrent >= GameManager.Instance.gunAmmoMax / 4 * 2)
+            {
+                ammoCurrentSprite.sprite = ammoSprites[2];
+            }
+            else if (GameManager.Instance.gunAmmoCurrent >= GameManager.Instance.gunAmmoMax / 4 * 1)
+            {
+                ammoCurrentSprite.sprite = ammoSprites[3];
+            }
+            else if (GameManager.Instance.gunAmmoCurrent > 0)
+            {
+                ammoCurrentSprite.sprite = ammoSprites[4];
+            }
+            else
+            {
+                ammoCurrentSprite.sprite = ammoSprites[5];
+            }
+    }
+    else{
+        if (rocketLauncher.GetComponent<GunfireController>().ammo==1)
         {
             ammoCurrentSprite.sprite = ammoSprites[0];
-        }
-        else if (GameManager.Instance.gunAmmoCurrent >= GameManager.Instance.gunAmmoMax / 4 * 3)
-        {
-            ammoCurrentSprite.sprite = ammoSprites[1];
-        }
-        else if (GameManager.Instance.gunAmmoCurrent >= GameManager.Instance.gunAmmoMax / 4 * 2)
-        {
-            ammoCurrentSprite.sprite = ammoSprites[2];
-        }
-        else if (GameManager.Instance.gunAmmoCurrent >= GameManager.Instance.gunAmmoMax / 4 * 1)
-        {
-            ammoCurrentSprite.sprite = ammoSprites[3];
-        }
-        else if (GameManager.Instance.gunAmmoCurrent > 0)
-        {
-            ammoCurrentSprite.sprite = ammoSprites[4];
         }
         else
         {
             ammoCurrentSprite.sprite = ammoSprites[5];
         }
     }
+}
 }

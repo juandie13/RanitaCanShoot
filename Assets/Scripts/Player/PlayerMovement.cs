@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using System;
 
 [RequireComponent(typeof(CharacterController))]
+
+
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
@@ -17,6 +21,14 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController characterController;
     private Transform myCamera;
 
+    [SerializeField] GameObject shotgun;
+    [SerializeField] GameObject rocketLauncher;
+
+    [SerializeField] GameObject rocketLauncherCanvas;
+    [SerializeField] GameObject shotgunCanvas;
+
+    public int weaponSelect=0;
+
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -26,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        shotgunCanvas.GetComponent<Image>().color = Color.green;
+        rocketLauncherCanvas.GetComponent<Image>().color = Color.white;
     }
 
     private void Update()
@@ -63,6 +77,14 @@ public class PlayerMovement : MonoBehaviour
             0f,
             0f
         );
+
+        if(weaponSelect==0){
+            shotgun.SetActive(true);
+            rocketLauncher.SetActive(false);
+        }else{
+            shotgun.SetActive(false);
+            rocketLauncher.SetActive(true);
+        }
     }
 
     private void OnMove(InputValue value)
@@ -79,7 +101,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (value.isPressed)
         {
-            myCamera.GetComponent<PlayerFire>().Fire();
+            if(weaponSelect==0){
+                myCamera.GetComponent<PlayerFire>().Fire();
+            }else{
+                myCamera.GetComponent<PlayerFire>().Fire();
+                rocketLauncher.GetComponent<GunfireController>().shoot=true;
+            }
+            
         }
     }
 
@@ -99,5 +127,20 @@ public class PlayerMovement : MonoBehaviour
             data.x, // rotacion horizontal (sobre eje Y)
             0f
         );
+    }
+
+    private void OnSwitch(InputValue value){
+        if(value.isPressed){
+            if(weaponSelect==0){
+                weaponSelect++;
+                shotgunCanvas.GetComponent<Image>().color = Color.white;
+                rocketLauncherCanvas.GetComponent<Image>().color = Color.green;
+            }else{
+                weaponSelect--;
+                shotgunCanvas.GetComponent<Image>().color = Color.green;
+                rocketLauncherCanvas.GetComponent<Image>().color = Color.white;
+            }
+            myCamera.GetComponent<PlayerFire>().Reload();
+        }
     }
 }
