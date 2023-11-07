@@ -14,12 +14,15 @@ public class PlayerFire : MonoBehaviour
     [SerializeField] GameObject rocketLauncher;
     private void Update()
     {
-        if(player.GetComponent<PlayerMovement>().weaponSelect==0){
-            speed=10f;
-            distance=20f;
-        }else{
-            speed=100;
-            distance=60f;
+        if (player.GetComponent<PlayerMovement>().weaponSelect == 0)
+        {
+            speed = 10f;
+            distance = 20f;
+        }
+        else
+        {
+            speed = 100;
+            distance = 60f;
         }
 
         Debug.DrawRay(
@@ -35,31 +38,38 @@ public class PlayerFire : MonoBehaviour
         {
             RaycastHit hit;
 
-            if (Physics.Raycast(transform.position, transform.forward, out hit, distance) && (GameManager.Instance.gunAmmoCurrent>0 || rocketLauncher.GetComponent<GunfireController>().ammo>0 ))
+            if (Physics.Raycast(transform.position, transform.forward, out hit, distance) && (GameManager.Instance.gunAmmoCurrent > 0 || rocketLauncher.GetComponent<GunfireController>().ammo > 0))
             {
                 // Choco con algo
-               // Debug.Log(hit.collider.transform.name);
+                // Debug.Log(hit.collider.transform.name);
                 if (hit.collider.gameObject.CompareTag("HeadShoot"))
                 {
-                    if(player.GetComponent<PlayerMovement>().weaponSelect==0){
+                    if (player.GetComponent<PlayerMovement>().weaponSelect == 0)
+                    {
                         hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(15f);
-                    }else{
+                    }
+                    else
+                    {
                         hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(50f);
                     }
-                    
-                    
+
+
                 }
                 else if (hit.collider.gameObject.CompareTag("Enemy"))
                 {
-                    if(player.GetComponent<PlayerMovement>().weaponSelect==0){
+                    if (player.GetComponent<PlayerMovement>().weaponSelect == 0)
+                    {
                         hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(5f);
-                    }else{
+                    }
+                    else
+                    {
                         hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(15f);
                     }
-                    
+
                 }
                 Quaternion lookAt = Quaternion.LookRotation(hit.normal);
-                if(player.GetComponent<PlayerMovement>().weaponSelect==0){
+                if (player.GetComponent<PlayerMovement>().weaponSelect == 0)
+                {
                     GameObject temp = Resources.Load<GameObject>("BulletCollision");
                     var obj = Instantiate(
                         temp,
@@ -68,10 +78,12 @@ public class PlayerFire : MonoBehaviour
                     SM.PlaySound(SoundManager.SoundType.shoot);
                     GameManager.Instance.gunAmmoCurrent--;
                     Destroy(obj, 2f);
-                }else{
-                    
                 }
-                
+                else
+                {
+
+                }
+
 
             }
         }
@@ -99,17 +111,20 @@ public class PlayerFire : MonoBehaviour
         GameManager.Instance.isReloading = true;
         GameManager.Instance.canShoot = false;
         yield return new WaitForSeconds(2f);
-        if(player.GetComponent<PlayerMovement>().weaponSelect==0){
+        if (player.GetComponent<PlayerMovement>().weaponSelect == 0)
+        {
             GameManager.Instance.gunAmmoCurrent = GameManager.Instance.gunAmmoMax;
-        }else{
-            rocketLauncher.GetComponent<GunfireController>().ammo=1;
+        }
+        else
+        {
+            rocketLauncher.GetComponent<GunfireController>().ammo = 1;
             rocketLauncher.GetComponent<GunfireController>().ReEnableDisabledProjectile();
         }
         GameManager.Instance.canShoot = true;
         GameManager.Instance.isReloading = false;
         reloadSound = true;
-        
-        
+
+
     }
 
 }

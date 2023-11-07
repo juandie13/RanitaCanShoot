@@ -52,5 +52,5 @@
         "Temp/": true
     },
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "RanitaCanShoot.sln"
+    "dotnet.defaultSolution": "RanitaCanShoot2.sln"
 }
