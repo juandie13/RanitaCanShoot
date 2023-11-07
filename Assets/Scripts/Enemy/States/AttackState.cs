@@ -10,7 +10,7 @@ public class AttackState : State
         Transition transitionAttackToFollow = new Transition(
             isValid : () => {
                 float distance = Vector3.Distance(
-                    controller.Player.position,
+                    controller.target.transform.position,
                     controller.transform.position
                 );
                 if (distance >= controller.DistanceToAttack)
