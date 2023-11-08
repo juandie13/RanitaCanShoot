@@ -48,22 +48,12 @@ public class PlayerFire : MonoBehaviour
                     {
                         hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(15f);
                     }
-                    else
-                    {
-                        hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(50f);
-                    }
-
-
                 }
-                else if (hit.collider.gameObject.CompareTag("Enemy"))
+                else if (hit.collider.gameObject.CompareTag("EnemyBody"))
                 {
                     if (player.GetComponent<PlayerMovement>().weaponSelect == 0)
                     {
-                        hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(5f);
-                    }
-                    else
-                    {
-                        hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(15f);
+                        hit.collider.gameObject.GetComponent<BodyDamage>().DoDamage(5f);
                     }
                 }
                 Quaternion lookAt = Quaternion.LookRotation(hit.normal);
