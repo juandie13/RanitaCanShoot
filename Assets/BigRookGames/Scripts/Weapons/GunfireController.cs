@@ -57,7 +57,7 @@ public class GunfireController : MonoBehaviour
 
             // --- Fires the weapon if the delay time period has passed since the last shot ---
             //if (autoFire && ((timeLastFired + shotDelay) <= Time.time))
-            if (shoot && ((timeLastFired + shotDelay) <= Time.time))
+            if (shoot && ammo>0 && ((timeLastFired + shotDelay) <= Time.time))
             {
                 FireWeapon();
             }
