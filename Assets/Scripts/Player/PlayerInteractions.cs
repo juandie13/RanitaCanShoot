@@ -32,15 +32,16 @@ public class PlayerInteractions : MonoBehaviour
     }
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log("CHOCANDO");
         //Debug.Log(collision.transform.tag);
         if (collision.transform.CompareTag("Enemy"))
         {
            // Debug.Log("recibirDano");
             DamagePlayer(0.1f);
+            
         }
         else if (collision.transform.CompareTag("EnemyBig"))
         {
+            
             DamagePlayer(0.2f);
             Debug.Log("CHOCO A ENEMIGO GRANDE");
         }
