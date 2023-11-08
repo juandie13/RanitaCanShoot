@@ -16,6 +16,7 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         InvokeRepeating(nameof(Spawn), this.startSpawn, this.spawnRate);
+        spawnAmount = GameManager.Instance.ordaCount;
     }
     private void Update()
     {

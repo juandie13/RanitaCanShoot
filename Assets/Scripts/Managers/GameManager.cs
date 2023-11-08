@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public float armorLifeCurrent = 100;
     public float armorLifeMax = 100;
 
+    public int ordaCount;
     public static GameManager Instance { get; private set; }
     private void Awake()
     {
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
+        DontDestroyOnLoad(this.gameObject);
     }
     void Start()
     {

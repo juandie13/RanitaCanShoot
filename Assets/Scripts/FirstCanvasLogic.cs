@@ -40,6 +40,7 @@ public class FirstCanvasLogic : MonoBehaviour
             Debug.Log("Invalid input");
         }
         Debug.Log(enemyCount);
+        GameManager.Instance.ordaCount = enemyCount;
         SceneManager.LoadScene("MainScene");
     }
 }
