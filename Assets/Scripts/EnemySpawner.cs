@@ -7,13 +7,14 @@ public class EnemySpawner : MonoBehaviour
 {
     public EnemyController enemyPrefab;
     float cronometro = 0.0f;
+    private float startSpawn = 1.0f;
     public float spawnRate = 60.0f;
     public float trajectoryVariance = 15.0f;
     public float spawnDistance = 15.0f;
     public int spawnAmount = 30;
     private void Start()
     {
-        InvokeRepeating(nameof(Spawn), this.spawnRate, this.spawnRate);
+        InvokeRepeating(nameof(Spawn), this.startSpawn, this.spawnRate);
     }
     private void Update()
     {
