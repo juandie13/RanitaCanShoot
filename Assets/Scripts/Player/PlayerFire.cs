@@ -94,15 +94,13 @@ public class PlayerFire : MonoBehaviour
 
     public void Reload()
     {
-        if (GameManager.Instance.canReload)
-        {
-            if (reloadSound == true)
+        
+       if (reloadSound == true)
             {
                 reloadSound = false;
                 SM.PlaySound(SoundManager.SoundType.reload);
             }
             StartCoroutine(ReloadWeapon());
-        }
     }
 
     private IEnumerator ReloadWeapon()
