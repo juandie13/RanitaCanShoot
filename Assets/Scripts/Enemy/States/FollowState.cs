@@ -52,7 +52,7 @@ public class FollowState : State
 
     public override void OnStart()
     {
-        Debug.Log("Estado Follow: Start");
+        //Debug.Log("Estado Follow: Start");
         controller.agent.isStopped = false;
         controller.agent.velocity = new Vector3(
             controller.Speed, 
@@ -85,6 +85,6 @@ public class FollowState : State
     }
     public override void OnFinish()
     {
-        Debug.Log("Estado Follow: FInish");
+        //Debug.Log("Estado Follow: FInish");
     }
 }

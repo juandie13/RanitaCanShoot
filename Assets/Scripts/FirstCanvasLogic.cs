@@ -39,13 +39,13 @@ public class FirstCanvasLogic : MonoBehaviour
         bool success = int.TryParse(count, out enemyCount);
         if (success)
         {
-            Debug.Log(enemyCount); // Output: 123
+           // Debug.Log(enemyCount); // Output: 123
         }
         else
         {
             Debug.Log("Invalid input");
         }
-        Debug.Log(enemyCount);
+        //Debug.Log(enemyCount);
         GameManager.Instance.ordaCount = enemyCount;
         GameManager.Instance.playerLifeCurrent = GameManager.Instance.playerLifeMax;
         GameManager.Instance.armorLifeCurrent = GameManager.Instance.armorLifeMax;

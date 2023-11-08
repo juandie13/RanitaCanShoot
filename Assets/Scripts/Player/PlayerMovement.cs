@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
         desiredRotation.x = Mathf.Clamp(desiredRotation.x, -20f, 20f);
         /*myCamera.rotation = Quaternion.Euler(desiredRotation); */
-        Debug.Log(myCamera.eulerAngles.x);
+        //Debug.Log(myCamera.eulerAngles.x);
         //Mathf.Clamp(myCamera.eulerAngles.x, 90f, -68f);
 
         if (ejevertcal <= 360f && ejevertcal >= 290f || ejevertcal >= 0 && ejevertcal <= 70f)

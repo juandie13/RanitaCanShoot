@@ -52,7 +52,7 @@ public class EnemyController : MonoBehaviour
 
     private void Update() 
     {
-        Debug.Log(enemyHealth);
+        //Debug.Log(enemyHealth);
         foreach (var transition in currentState.Transitions)
         {
             if (transition.IsValid())
