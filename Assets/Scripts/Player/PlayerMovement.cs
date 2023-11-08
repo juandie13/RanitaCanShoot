@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject shotgunCanvas;
     public GameObject mainCamera;
     public int weaponSelect=0;
-
+    private float ultimoEjeVertical;
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         // Rotacion vertical (camara)
         
         var rotationAngle = -rotation.x * RotationSpeed * Time.deltaTime;
+        float ejevertcal = myCamera.eulerAngles.x;
         /*var desiredRotationQuat = Quaternion.Euler(transform.rotation.x + rotationAngle,
             0f,
             0f);
@@ -75,17 +76,19 @@ public class PlayerMovement : MonoBehaviour
         /*myCamera.rotation = Quaternion.Euler(desiredRotation); */
         Debug.Log(myCamera.eulerAngles.x);
         //Mathf.Clamp(myCamera.eulerAngles.x, 90f, -68f);
-        
-        if (myCamera.eulerAngles.x <= 300f || myCamera.eulerAngles.x >= 70)
-        {
-            
-        }
 
-        myCamera.Rotate(
-            rotationAngle, //TODO: Clamp
-            0f,
-            0f
-        );
+        if (ejevertcal <= 360f && ejevertcal >= 290f || ejevertcal >= 0 && ejevertcal <= 70f)
+        {
+            myCamera.Rotate(rotationAngle, 0f, 0f);
+            ultimoEjeVertical = ejevertcal;
+        }
+        else
+        {
+            myCamera.localEulerAngles = new Vector3(ultimoEjeVertical,0f,0f);
+        }
+        
+
+
         if (weaponSelect==0){
             shotgun.SetActive(true);
             rocketLauncher.SetActive(false);
