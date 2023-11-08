@@ -75,6 +75,7 @@ public class EnemyController : MonoBehaviour
         if (enemyHealth <= 0)
         {
             Destroy(this.gameObject);
+            EnemySpawner.Instance.enemyList--;
         }
     }
 }

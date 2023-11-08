@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using TMPro;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -13,10 +14,18 @@ public class EnemySpawner : MonoBehaviour
     public float trajectoryVariance = 15.0f;
     public float spawnDistance = 15.0f;
     public int spawnAmount = 30;
+    public AudioSource startRound;
+    public int currentRound;
+    public static AudioClip startSound;
+    public int enemyList = GameManager.Instance.ordaCount;
+    public TextMeshProUGUI rondaText;
+
+    public static EnemySpawner Instance { get; private set; }
     private void Start()
     {
         InvokeRepeating(nameof(Spawn), this.startSpawn, this.spawnRate);
         spawnAmount = GameManager.Instance.ordaCount;
+        startSound = Resources.Load<AudioClip>("startRound");
     }
     private void Update()
     {
@@ -34,8 +43,23 @@ public class EnemySpawner : MonoBehaviour
             }
         }
     }
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
     private void Spawn()
     {
+        enemyList = 0;
+        currentRound++;
+        startRound.PlayOneShot(startSound);
+        rondaText.text = "Ronda actual: "+ currentRound;
         for (int i = 0; i < this.spawnAmount; i++)
         {
             int randomNumber = Random.Range(0, this.spawnAmount);
@@ -49,10 +73,12 @@ public class EnemySpawner : MonoBehaviour
             if (i < randomNumber)
             {
                 EnemyController enemy = Instantiate(this.enemyPrefab, spawnPoint, rotation);
+                enemyList++;
             }
             else
             {
                 EnemyController enemy = Instantiate(this.enemyPrefab2, spawnPoint, rotation);
+                enemyList++;
             }
         }
     }
