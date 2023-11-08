@@ -65,7 +65,6 @@ public class PlayerFire : MonoBehaviour
                     {
                         hit.collider.gameObject.GetComponent<HeadShootDamage>().DoDamage(15f);
                     }
-
                 }
                 Quaternion lookAt = Quaternion.LookRotation(hit.normal);
                 if (player.GetComponent<PlayerMovement>().weaponSelect == 0)
