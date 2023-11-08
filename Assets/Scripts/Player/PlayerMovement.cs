@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
             rotation.y * RotationSpeed * Time.deltaTime,
             0f
         );
-
+        characterController.Move(Vector3.down * 9.82f * Time.deltaTime);
         // Rotacion vertical (camara)
         var rotationAngle = -rotation.x * RotationSpeed * Time.deltaTime;
 
