@@ -17,14 +17,14 @@ public class GameManager : MonoBehaviour
     public float playerLifeMax = 100;
     public float armorLifeCurrent = 100;
     public float armorLifeMax = 100;
-
+    public bool perdiste = false;
     public int ordaCount;
     public static GameManager Instance { get; private set; }
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         else
         {

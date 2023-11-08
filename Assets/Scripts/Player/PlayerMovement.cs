@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System;
-
+using UnityEngine.SceneManagement;
 [RequireComponent(typeof(CharacterController))]
 
 
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] GameObject rocketLauncherCanvas;
     [SerializeField] GameObject shotgunCanvas;
-
+    public GameObject mainCamera;
     public int weaponSelect=0;
 
     private void Awake()
@@ -57,7 +57,9 @@ public class PlayerMovement : MonoBehaviour
             0f
         );
         characterController.Move(Vector3.down * 9.82f * Time.deltaTime);
+
         // Rotacion vertical (camara)
+        
         var rotationAngle = -rotation.x * RotationSpeed * Time.deltaTime;
 
         /*var desiredRotationQuat = Quaternion.Euler(transform.rotation.x + rotationAngle,
@@ -71,19 +73,28 @@ public class PlayerMovement : MonoBehaviour
             : desiredRotation.x ;
 
         desiredRotation.x = Mathf.Clamp(desiredRotation.x, -20f, 20f);
-        /*myCamera.rotation = Quaternion.Euler(desiredRotation); */
+        /*myCamera.rotation = Quaternion.Euler(desiredRotation); */        
+        if (mainCamera.transform.rotation.x <= 50f)
+        {
+            
+        }
         myCamera.Rotate(
-            rotationAngle, //TODO: Clamp
+            Mathf.Clamp(rotationAngle, -90f, 90f), //TODO: Clamp
             0f,
             0f
         );
 
-        if(weaponSelect==0){
+        if (weaponSelect==0){
             shotgun.SetActive(true);
             rocketLauncher.SetActive(false);
         }else{
             shotgun.SetActive(false);
             rocketLauncher.SetActive(true);
+        }
+        if (GameManager.Instance.playerLifeCurrent <= 0)
+        {
+            Die();
+            SceneManager.LoadScene("PrimeraEscena");
         }
     }
 
@@ -142,5 +153,9 @@ public class PlayerMovement : MonoBehaviour
             }
             myCamera.GetComponent<PlayerFire>().Reload();
         }
+    }
+    public void Die()
+    {
+        GameManager.Instance.perdiste = true;
     }
 }

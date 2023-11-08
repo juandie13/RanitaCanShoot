@@ -10,10 +10,16 @@ public class FirstCanvasLogic : MonoBehaviour
     public int enemyCount;
     public TextMeshProUGUI text;
     public string count;
+    public GameObject textoPerdiste;
     // Start is called before the first frame update
     void Start()
     {
+        UnlockCursor();
         enemyCount = 10;
+        if (GameManager.Instance.perdiste == true)
+        {
+            textoPerdiste.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -41,6 +47,19 @@ public class FirstCanvasLogic : MonoBehaviour
         }
         Debug.Log(enemyCount);
         GameManager.Instance.ordaCount = enemyCount;
+        GameManager.Instance.playerLifeCurrent = GameManager.Instance.playerLifeMax;
+        GameManager.Instance.armorLifeCurrent = GameManager.Instance.armorLifeMax;
         SceneManager.LoadScene("MainScene");
+        GameManager.Instance.perdiste = false;
+    }
+    public void LookCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+    public void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
