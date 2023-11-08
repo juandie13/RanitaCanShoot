@@ -189,7 +189,7 @@ MonoBehaviour:
   Speed: 1
   FirePoint: {fileID: 0}
   CoolDownTime: 1
-  enemyHealth: 100
+  enemyHealth: 200
 --- !u!54 &5255112483763631797
 Rigidbody:
   m_ObjectHideFlags: 0

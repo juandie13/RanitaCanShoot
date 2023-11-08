@@ -183,6 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5820c880773500745a5fefdbe90b9e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enemy:
+  - {fileID: 3061790641577059903, guid: 684c4591be7085f448fda322df6c7727, type: 3}
+  - {fileID: 3061790641577059903}
   target: {fileID: 0}
   DistanceToFollow: 50
   DistanceToAttack: 3
