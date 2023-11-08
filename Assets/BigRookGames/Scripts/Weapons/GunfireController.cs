@@ -48,6 +48,9 @@ public class GunfireController : MonoBehaviour
 
         private void Update()
         {
+            if(ammo==0){
+                shoot=false;
+            }
             // --- If rotate is set to true, rotate the weapon in scene ---
             if (rotate)
             {

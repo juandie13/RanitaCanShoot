@@ -84,13 +84,16 @@ public class PlayerFire : MonoBehaviour
 
     public void Reload()
     {
-        
-       if (reloadSound == true)
-            {
-                reloadSound = false;
-                SM.PlaySound(SoundManager.SoundType.reload);
+        if((GameManager.Instance.gunAmmoCurrent!=GameManager.Instance.gunAmmoMax && player.GetComponent<PlayerMovement>().weaponSelect==0) || (rocketLauncher.GetComponent<GunfireController>().ammo!=1 && player.GetComponent<PlayerMovement>().weaponSelect==1)){
+            if(!GameManager.Instance.isReloading){
+                if (reloadSound == true)
+                {
+                    reloadSound = false;
+                    SM.PlaySound(SoundManager.SoundType.reload);
+                }
+                StartCoroutine(ReloadWeapon());
             }
-            StartCoroutine(ReloadWeapon());
+        }
     }
 
     private IEnumerator ReloadWeapon()
