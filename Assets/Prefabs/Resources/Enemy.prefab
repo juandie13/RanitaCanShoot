@@ -186,7 +186,7 @@ MonoBehaviour:
   target: {fileID: 0}
   DistanceToFollow: 50
   DistanceToAttack: 3
-  Speed: 1
+  Speed: 2
   FirePoint: {fileID: 0}
   CoolDownTime: 1
   enemyHealth: 100

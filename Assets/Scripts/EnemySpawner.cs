@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public EnemyController enemyPrefab;
+    public EnemyController enemyPrefab2;
     float cronometro = 0.0f;
     private float startSpawn = 1.0f;
     public float spawnRate = 60.0f;
@@ -36,13 +37,22 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < this.spawnAmount; i++)
         {
+            int randomNumber = Random.Range(0, this.spawnAmount);
+
             UnityEngine.Vector3 spawnDirection = Random.insideUnitSphere.normalized * spawnDistance;
             UnityEngine.Vector3 spawnPoint = this.transform.position + spawnDirection;
 
             float variance = Random.Range(-this.trajectoryVariance, this.trajectoryVariance);
             UnityEngine.Quaternion rotation = UnityEngine.Quaternion.AngleAxis(variance, UnityEngine.Vector3.forward);
 
-            EnemyController enemy = Instantiate(this.enemyPrefab, spawnPoint, rotation);
+            if (i < randomNumber)
+            {
+                EnemyController enemy = Instantiate(this.enemyPrefab, spawnPoint, rotation);
+            }
+            else
+            {
+                EnemyController enemy = Instantiate(this.enemyPrefab2, spawnPoint, rotation);
+            }
         }
     }
 }
