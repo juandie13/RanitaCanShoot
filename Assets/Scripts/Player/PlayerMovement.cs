@@ -61,7 +61,6 @@ public class PlayerMovement : MonoBehaviour
         // Rotacion vertical (camara)
         
         var rotationAngle = -rotation.x * RotationSpeed * Time.deltaTime;
-
         /*var desiredRotationQuat = Quaternion.Euler(transform.rotation.x + rotationAngle,
             0f,
             0f);
@@ -73,17 +72,20 @@ public class PlayerMovement : MonoBehaviour
             : desiredRotation.x ;
 
         desiredRotation.x = Mathf.Clamp(desiredRotation.x, -20f, 20f);
-        /*myCamera.rotation = Quaternion.Euler(desiredRotation); */        
-        if (mainCamera.transform.rotation.x <= 50f)
+        /*myCamera.rotation = Quaternion.Euler(desiredRotation); */
+        Debug.Log(myCamera.eulerAngles.x);
+        //Mathf.Clamp(myCamera.eulerAngles.x, 90f, -68f);
+        
+        if (myCamera.eulerAngles.x <= 300f || myCamera.eulerAngles.x >= 70)
         {
             
         }
+
         myCamera.Rotate(
-            Mathf.Clamp(rotationAngle, -90f, 90f), //TODO: Clamp
+            rotationAngle, //TODO: Clamp
             0f,
             0f
         );
-
         if (weaponSelect==0){
             shotgun.SetActive(true);
             rocketLauncher.SetActive(false);
