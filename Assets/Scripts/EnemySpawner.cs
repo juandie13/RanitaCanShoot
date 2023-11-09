@@ -19,6 +19,8 @@ public class EnemySpawner : MonoBehaviour
     public static AudioClip startSound;
     public int enemyList = GameManager.Instance.ordaCount;
     public TextMeshProUGUI rondaText;
+    public TextMeshProUGUI rondaTimer;
+    public float timeToNewRound;
 
     public static EnemySpawner Instance { get; private set; }
     private void Start()
@@ -30,6 +32,8 @@ public class EnemySpawner : MonoBehaviour
     private void Update()
     {
         cronometro += 1 * Time.deltaTime;
+        timeToNewRound -= 1 * Time.deltaTime;
+        rondaTimer.text = "Tiempo para siguiente orda: " + (int)timeToNewRound;
         if (cronometro >= spawnRate)
         {
             spawnRate -= 5.0f;
@@ -58,6 +62,9 @@ public class EnemySpawner : MonoBehaviour
     {
         enemyList = 0;
         currentRound++;
+        timeToNewRound = spawnRate;
+        rondaText.gameObject.SetActive(true);
+        rondaTimer.gameObject.SetActive(true);
         startRound.PlayOneShot(startSound);
         rondaText.text = "Ronda actual: "+ currentRound;
         for (int i = 0; i < this.spawnAmount; i++)
